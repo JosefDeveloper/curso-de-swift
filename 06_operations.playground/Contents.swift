@@ -143,3 +143,28 @@ if !allowEntry {
 }
 
 // AND
+let enterDoorCode = true
+let passRetinaScan = false
+
+if enterDoorCode && passRetinaScan {
+    print("Bienvenido a la empresa")
+} else {
+    print("ACCESO DENEGADO")
+}
+
+// OR
+let hasMoney = true
+let hasInvitation = false
+
+if hasMoney || hasInvitation {
+    print("Bienvenido a la fiesta 🥳")
+} else {
+    print("No estás invitado 😡")
+}
+
+// Combinando lo aprendio
+let knowSwift = true
+let knowMath = true
+
+let response = hasMoney && knowSwift && knowMath ? "You can develop apps" : "You can't develope apps"
+print(response)
