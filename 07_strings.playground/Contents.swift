@@ -140,3 +140,22 @@ for scene in collection {
 }
 
 print("El número de escenas del acto 1 es: \(act1SceneCount)")
+
+// Representaciones unicode
+let ghost = "¡¡Fantasma!! 👻"
+
+for codeUnit in ghost.utf8 {
+    print(codeUnit, terminator: " ")
+}
+
+print(" ")
+
+for codeUnit in ghost.utf16 {
+    print(codeUnit, terminator: " ")
+}
+
+print(" ")
+
+for codeUnit in ghost.unicodeScalars {
+    print(codeUnit, terminator: " ")
+}
