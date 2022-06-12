@@ -90,3 +90,28 @@ let five = 5
 for i in 0..<13 {
     print("\(five) * \(i) = \(five * i)")
 }
+
+// Indices de Strings
+let greeting = "Hola, ¿Cómo estás?"
+print(greeting[greeting.startIndex])
+//greeting[greeting.endIndex]
+greeting[greeting.index(before: greeting.endIndex)]
+greeting[greeting.index(after: greeting.startIndex)]
+
+for idx in greeting.indices {
+    print("\(greeting[idx]) - \(idx)")
+}
+
+for idx in greeting.indices {
+    print("\(greeting[idx])", terminator: "")
+}
+
+var hi = "Hola"
+hi.insert(exclamationMark, at: hi.endIndex)
+hi.insert(contentsOf: ", cómo estás", at: hi.index(before: hi.endIndex))
+
+hi.remove(at: hi.index(before: hi.endIndex))
+hi
+
+let range = hi.index(hi.endIndex, offsetBy: -12)..<hi.endIndex
+hi.removeSubrange(range)
