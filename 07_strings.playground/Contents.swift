@@ -115,3 +115,4 @@ hi
 
 let range = hi.index(hi.endIndex, offsetBy: -12)..<hi.endIndex
 hi.removeSubrange(range)
+
