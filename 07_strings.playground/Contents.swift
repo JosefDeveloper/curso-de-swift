@@ -27,3 +27,33 @@ Y mi meta este año es \(myData.goal). 🤞🏾
 """
 
 print(presentation)
+
+// Inicializacion y Mutabilidad
+var emptyString = ""
+var anotherEmptyString = String()
+
+if emptyString.isEmpty {
+    print("El string está vacío 🙄")
+} else {
+    print("El valor del string es: \(emptyString)")
+}
+ var newSomeString = "Jose"
+newSomeString += " Alzugaray"
+newSomeString += " alias Josef Dev"
+
+// Datos evaluados
+var a = "A"
+var b = "B"
+print("a vale \(a) y b vale \(b)")
+b = a
+print("a vale \(a) y b vale \(b)")
+a = "C"
+print("a vale \(a) y b vale \(b)")
+
+let uno = "1"
+var dos = "2"
+print("uno vale \(uno) y dos vale \(dos)")
+dos = uno
+print("uno vale \(uno) y dos vale \(dos)")
+dos += " + 1"
+print("uno vale \(uno) y dos vale \(dos)")
