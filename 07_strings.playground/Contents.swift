@@ -57,3 +57,36 @@ dos = uno
 print("uno vale \(uno) y dos vale \(dos)")
 dos += " + 1"
 print("uno vale \(uno) y dos vale \(dos)")
+
+// Characters
+let name = "Josef Dev 🚀"
+for ch in name {
+    print(ch)
+}
+print(name.count)
+
+let exclamationMark : Character = "!"
+let nameChars : [Character] = ["J", "o", "s", "e", "f"]
+var nameString = String(nameChars)
+
+let compoundName = "Josef " + "Dev"
+
+// concatenar String y Character
+nameString.append(exclamationMark)
+
+let multiplier = 3
+var message = "El resultado de \(multiplier) x 4.5 da \(Double(multiplier) * 4.5)"
+message.append(exclamationMark)
+
+// Reto 01
+let chMyName : [Character] = ["S", "o", "y", " ", "J", "o", "s", "e", " ", "y", " ", "v", "i", "v", "o", " ", "e", "n", " ", "\u{1f1f5}\u{1f1ea}"]
+var myName = String(chMyName)
+myName.append(exclamationMark)
+myName += " 🤩"
+print(myName)
+
+// Reto 02
+let five = 5
+for i in 0..<13 {
+    print("\(five) * \(i) = \(five * i)")
+}
